@@ -1,44 +1,44 @@
 # courses-platform
-Project for web client environment, course platform in which we have a structure of students, teachers and courses. With this I will make a small outline of what will be my integrated project.
-At the beginning we will have only the administration of students by teachers, where a teacher can only make changes on students (each student will have only one teacher, but teachers will have several students in their charge).
+Project for web client environment, course platform in which we have a structure of students, teachers and courses. With this I will make a small outline of what will be my integrated project. At first we will only have the administration of students with their courses, where a student can do multiple courses.
 
-Administrators will be able to add teachers and teachers will be able to add students under their responsibility.
+The administrators will be able to add students and the students will be able to choose different courses.
 
-The teacher will have the following data: name (text), id (number), classroom (coordinates) and if he uses the platform (boolean).
 
-The student will have the following data: name (text), id (number), classroom (coordinates) and if they attend (boolean).
+The student will have the following data: name (text), id (number), age (number), address (coordinates) and if he is doing a course (boolean).
 
-## Descripción de carpetas y archivos
+The course will have the following data: name (text), id (number), duration (time), name to put in coordinates, finished (boolean).
 
-### Archivos principales
-- **package.json**: Contiene las dependencias y scripts del proyecto.
-- **README.md**: Este archivo con la documentación del proyecto.
+## Description of folders and files
 
-### Directorio `src`
-Contiene el código fuente del proyecto:
-- **index.html**: Página principal.
-- **main.js**: Archivo JavaScript principal.
+### Main files
+- **package.json**: Contains the project dependencies and scripts.
+- README.md**: This file contains the project documentation.
 
-#### Subdirectorio `alumno`
-Archivos relacionados con la gestión de alumnos:
-- **alumno.css**: Estilos específicos de alumnos.
-- **alumno.js**: Lógica de alumnos.
-- **crearAlumno.html**: Página para crear un alumno.
-- **editarAlumno.html**: Página para editar un alumno.
-- **listaAlumnos.html**: Página con la lista de alumnos.
+### `src` directory.
+Contains the project source code:
+- **index.html**: Main page.
+- main.js**: Main JavaScript file.
 
-#### Subdirectorio `assets`
-Archivos JSON que sirven como datos de ejemplo:
-- **alumnos.json**: Lista de alumnos.
-- **profesores.json**: Lista de profesores.
+#### Subdirectory `student`.
+Files related to student management:
+- **student.css**: Student specific styles.
+- student.js**: Student logic.
+- createStudent.html**: Page to create a student.
+- editStudent.html**: Page to edit a student.
+- listStudents.html**: Page with the list of students.
 
-#### Subdirectorio `css`
-- **main.css**: Archivo de estilos principal.
+#### Subdirectory `assets`.
+JSON files that serve as example data:
+- **alumnos.json**: List of students.
+- teachers.json**: List of teachers.
 
-#### Subdirectorio `curso`
-Archivos relacionados con la gestión de cursos:
-- **crearCurso.html**: Página para crear un curso.
-- **curso.css**: Estilos específicos de cursos.
-- **curso.js**: Lógica de cursos.
-- **editarCurso.html**: Página para editar un curso.
-- **listaCursos.html**: Página con la lista de cursos.
+#### Subdirectory `css`.
+- main.css**: Main style file.
+
+#### Subdirectory `course`: Course subdirectory.
+Files related to course management:
+- **createCourse.html**: Page to create a course.
+- course.css**: Course specific styles.
+- course.js**: Course logic.
+- editCourse.html**: Page to edit a course.
+- CourseList.html**: Page with the list of courses.
