@@ -1,0 +1,52 @@
+:root {
+    --primario: #6234d3;
+    --secundario: #8f67e8;
+    --neutro-claro: #f8f9fc;
+    --neutro-oscuro: #2b2d42;
+    --acento: #ffcc4d;
+    --exito: #4caf50;
+    --exito-secundario: #4caf4fb0;
+    --error: #e63946;
+  }
+  body {
+    background-color: var(--neutro-claro);
+    color: var(--neutro-oscuro);
+    padding: 0;
+  }
+  header {
+    background-color: var(--primario);
+    color: var(--neutro-claro);
+    max-height: auto;
+    display: inline-block;
+  }
+  footer {
+    background-color: var(--neutro-oscuro);
+    color: var(--neutro-claro);
+  }
+  .btn-primary {
+    background-color: var(--primario);
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: var(--secundario);
+  }
+  .btn-success {
+    background-color: var(--exito);
+    border: none;
+  }
+  .btn-success:hover {
+    background-color: var(--exito-secundario);
+  }
+
+  .logo{
+    width: 15%;
+    max-width: 100px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logotipo{
+    max-width: 100%;
+    height: auto;
+  }

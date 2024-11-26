@@ -13,7 +13,7 @@ class Student {
 let students = [];
 
 //funtion to create new student
-function createStudent(name, ege, address){
+function createStudent(name, age, address){
     const id = 1;
     if (students.length) {
         id = students[students.length-1].id + 1;
