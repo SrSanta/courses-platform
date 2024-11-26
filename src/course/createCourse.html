@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Course</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Create Course</h2>
+        <form id="formCreateCourse">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre del Curso</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="duration" class="form-label">Duration (hours)</label>
+                <input type="number" class="form-control" id="duration" required>
+            </div>
+            <div class="mb-3">
+                <label for="coordinates" class="form-label">Coordinates</label>
+                <input type="text" class="form-control" id="coordinates" required>
+            </div>
+            <div class="mb-3">
+                <label for="idStudent" class="form-label">Associated Student ID</label>
+                <input type="number" class="form-control" id="idStudent" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Course</button>
+        </form>
+    </div>
+</body>
+</html>
