@@ -16,7 +16,7 @@ let students = [{
     age: 21,
     address: "Calle",
     onGoing: false
-}];
+}]
 
 //funtion to create new student
 function createStudent(name, age, address) {
@@ -29,12 +29,12 @@ function createStudent(name, age, address) {
 
     const newStudent = new Student(id, name, age, address, false);
     students.push(newStudent);
-};
+}
 
 //funtion to list all the students
 function listStudents() {
     return students;
-};
+}
 console.log(listStudents());
 
 //funtion to edit existing student
@@ -45,8 +45,8 @@ function editStudent(id, name, age, address, onGoing) {
         studentExist.age = age;
         studentExist.address = address;
         studentExist.onGoing = onGoing;
-    };
-};
+    }
+}
 
 //funtion to delete student by id
 function deleteStudent(id) {
@@ -56,7 +56,7 @@ function deleteStudent(id) {
 
     if (position !== -1) {
         students.splice(position, 1);
-    };
-};
+    }
+}
 
 export { Student, listStudents, createStudent, editStudent, deleteStudent };
