@@ -2,6 +2,7 @@
 // Import required course.js functions
 import {Course} from "./course.js";
 import {courses} from "../assets/courses.js";
+import {students} from "../assets/students.js";
 
 // Create a test course
 createCourse("JavaScript Basics", "Learn the basics of JavaScript", "20 hours", { lat: 40.7128, lng: -74.0060 }, false, 1);
@@ -51,6 +52,12 @@ function createCourse(name, description, duration, coordinates, finished, idStud
 
 //Function to delete a course by ID
 function deleteCourse(id) {
+    const haveStudents = students.some(student => student.course === id);
+    if (haveStudents) {
+        alert("has students cannot be eliminated");
+        return;
+    }
+
     const position = courses.findIndex(course => course.id === id);
 
     if (position !== -1) {
