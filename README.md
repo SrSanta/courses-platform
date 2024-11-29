@@ -3,6 +3,8 @@ Project for web client environment, course platform in which we have a structure
 
 The administrators will be able to add students and the students will be able to choose different courses.
 
+###EJECUTE
+Open the index.html with the live server or by running npx live-server inside the project folder
 
 The student will have the following data: name (text), id (number), age (number), address (coordinates) and if he is doing a course (boolean).
 
