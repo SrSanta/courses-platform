@@ -1,18 +1,17 @@
 //logic for updating the table of students
 //importing necessary functions from student/student.js
-import { Student, listStudents, createStudent, deleteStudent } from "./student.js";
+import { Student, createStudent, deleteStudent } from "./student.js";
+import {students} from "../assets/students.js";
 
-//create a test student
-createStudent("santa", 200, "polo");
 //load the students with the listStudent() function from student/student.js, where we manage the students.
-const students = listStudents();
+const studentsList = students;
 
 
 //funtion to update the page to see the students
-function loadStudents() {
+window.onload = function loadStudents() {
     const tableBody = document.getElementById("tableStudents");
     tableBody.innerHTML = "";
-    students.forEach(student => {
+    studentsList.forEach(student => {
         const row = document.createElement("tr");
         row.innerHTML = `
             <td>${student.id}</td>
@@ -20,6 +19,7 @@ function loadStudents() {
             <td>${student.age}</td>
             <td>${student.address}</td>
             <td>${student.onGoing}</td>
+            <td>${student.course}</td>
             <td>
                 <div>
                     <button class="btn btn-danger btn-sm">Delete</button>
@@ -34,5 +34,3 @@ function loadStudents() {
         })
     })
 }
-
-loadStudents();

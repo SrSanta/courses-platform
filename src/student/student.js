@@ -1,22 +1,16 @@
+import {students} from "../assets/students.js";
+
 //create class Student
 class Student {
-    constructor(id, name, age, address, onGoing) {
+    constructor(id, name, age, address, onGoing, course) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.address = address;
         this.onGoing = onGoing;
+        this.course = course;
     }
 }
-
-//create array to load the students from students.json
-let students = [{
-    id: 1,
-    name: "Andrés",
-    age: 21,
-    address: "Calle",
-    onGoing: false
-}]
 
 //funtion to create new student
 function createStudent(name, age, address) {
@@ -30,12 +24,6 @@ function createStudent(name, age, address) {
     const newStudent = new Student(id, name, age, address, false);
     students.push(newStudent);
 }
-
-//funtion to list all the students
-function listStudents() {
-    return students;
-}
-console.log(listStudents());
 
 //funtion to edit existing student
 function editStudent(id, name, age, address, onGoing) {
@@ -59,4 +47,4 @@ function deleteStudent(id) {
     }
 }
 
-export { Student, listStudents, createStudent, editStudent, deleteStudent };
+export { Student, createStudent, editStudent, deleteStudent };
