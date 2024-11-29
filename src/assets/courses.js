@@ -27,3 +27,5 @@ let courses = [
         idStudents: [1, 3, 4]
     }
 ];
+
+export {courses};
