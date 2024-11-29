@@ -1,18 +1,16 @@
 //logic for updating the table of students
-    //importing necessary functions from student/student.js
-    import { Student, listStudents, createStudent, deleteStudent } from "./student.js";
+//importing necessary functions from student/student.js
+import { Student, listStudents, createStudent, deleteStudent } from "./student.js";
 
-    //create a test student
+//create a test student
 createStudent("santa", 200, "polo");
-    //load the students with the listStudent() function from student/student.js, where we manage the students.
+//load the students with the listStudent() function from student/student.js, where we manage the students.
 const students = listStudents();
 
-    //updating the table
-        //selection tbody
-const tableBody = document.getElementById("tableStudents");
 
-        //funtion to update the page to see the students
+//funtion to update the page to see the students
 function loadStudents() {
+    const tableBody = document.getElementById("tableStudents");
     tableBody.innerHTML = "";
     students.forEach(student => {
         const row = document.createElement("tr");

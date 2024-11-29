@@ -1,6 +1,6 @@
 //logic for updating the table of courses
 // Import required course.js functions
-import { Course, listCourses, createCourse, deleteCourse } from "./course/course.js";
+import { Course, listCourses, createCourse, deleteCourse } from "./course.js";
 
 // Create a test course
 createCourse("JavaScript Basics", "Learn the basics of JavaScript", "20 hours", { lat: 40.7128, lng: -74.0060 }, false, 1);
@@ -8,11 +8,9 @@ createCourse("JavaScript Basics", "Learn the basics of JavaScript", "20 hours", 
 // Load courses with the listCourses() function from course.js
 const courses = listCourses();
 
-// Select the <tbody> to display the courses.
-const tablaBody = document.getElementById("tableCourse");
-
 // Function for updating the course table
 function loadCourses() {
+    const tablaBody = document.getElementById("tableCourse");
     tablaBody.innerHTML = "";
 
     courses.forEach(course => {
